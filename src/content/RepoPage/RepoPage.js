@@ -141,7 +141,7 @@ const LinkList = ({ url, homepageUrl }) => (
 
 const getRowItems = rows =>
   rows.map(row => ({
-    ...row,
+    ...row, //ist der Name in der Tabelle also einfach das erste
     key: row.id,
     stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
